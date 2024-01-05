@@ -181,4 +181,81 @@ console.log(names.split(', ')); // converts to array
 
 //9. Get a character by index
 
-console.log(names.charAt(1)); 
+console.log(names.charAt(1));
+
+
+
+
+/********************************************************************************************************** */
+
+// NUMBER
+
+var numbers = new Number(10); // return object
+
+var numbers = 10; // return number 
+
+/*********************************************************************************************************** */
+
+//ARRAY
+ var language = [
+    'Javascript',
+    'Java',
+    'Python',
+    'C++'
+ ];
+
+ //length of array
+console.log(language.length);
+
+var languages = new Array('Javascript','Kotlin'); // return instance
+
+// Index
+
+console.log(languages[0]);
+
+languages[0] = 'Java';
+console.log(languages[0]);
+
+// Javascript Array function
+
+//1. To string
+
+console.log(language.toString());
+
+//2. Join
+
+console.log(language.join('-')); // to push at the between of the array element
+
+//3. Pop
+
+console.log(language.pop()); // Delete the lastest element of the array and return it
+
+//4. Push
+
+console.log(language.push('PHP')); // Add a new element to the end of the array and return it
+
+//5. Shift
+
+console.log(language.shift()); // Delete the first element of the array and return it
+
+//6. Unshift
+
+console.log(language.unshift('C#')); // Add a new element to the beginning of the array and return it
+
+//7.Splicing
+
+console.log(language.splice(1,1)); // Delete the element at the given index and return it
+
+//8. Concat
+
+console.log(language.concat('C#')); // Concatenate the array with another array and return it
+
+//9. Slicing
+
+console.log(language.slice(1,3)); // Slice the array from the given index and return it
+
+
+
+/********************************************************************************************************* */
+
+//OBJECT
