@@ -259,3 +259,231 @@ console.log(language.slice(1,3)); // Slice the array from the given index and re
 /********************************************************************************************************* */
 
 //OBJECT
+
+var person = {
+    firstName: 'Dat',
+    lastName: 'Nguyen',
+    age: 20,
+    job: 'Developer'
+}
+
+person.address = "Ha noi";
+person['home-o'] = "Hahah";
+
+console.log(person);
+
+// Get value
+
+console.log(person.firstName);
+console.log(person['firstName']);
+// Set value
+
+person.firstName = 'Dat';
+console.log(person.firstName);
+
+// Delete value
+
+delete person.firstName;
+console.log(person.firstName);
+
+// Check value
+
+if(person.firstName){
+    console.log(person.firstName);
+}else{
+    console.log('No value');
+}
+
+
+//Object constructor
+
+function Person(firstName, lastName, age, job){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.job = job;
+}
+var dat = new Person('Dat','Dat',20,'Ahihi');
+
+// Object prototype
+
+Person.prototype.fullName = function(){
+    console.log(this.firstName +'' + this.lastName);
+}
+
+dat.fullName();
+
+//Object date
+
+var date = new Date();
+console.log(date.getDate());
+
+
+// Math object
+
+//Math.PI
+
+console.log(Math.PI);
+
+//Math.random
+
+console.log(Math.random());
+
+//Math.round()
+
+console.log(Math.round(10.5));
+
+//Math.floor()
+
+console.log(Math.floor(10.5)); // to previous value
+
+//Math.ceil()
+
+console.log(Math.ceil(10.5)); // to next value
+
+//Math.abs()
+
+
+console.log(Math.abs(-10));
+
+//Math.pow()
+
+console.log(Math.pow(2,3));
+
+//Math.sqrt()
+
+console.log(Math.sqrt(4));
+
+//Math.min()
+
+console.log(Math.min(10,20));
+
+//Math.max()
+
+console.log(Math.max(10,20));
+
+//Math.sin()
+
+console.log(Math.sin(10));
+
+//Math.cos()
+
+console.log(Math.cos(10));
+
+
+/************************************************************************************************************* */
+//CONDITIONAL FUNCTIONS
+
+// If else, Switch case
+
+/************************************************************************************************************* */
+//LOOP
+
+//for, for in, for of, while, do while
+
+
+/************************************************************************************************************** */
+//CALL BACK
+
+//call back is function and be called in parameter
+
+function sayHello(name){
+    console.log('Hello'+ name);
+}
+
+function callback(){
+
+}
+sayHello(callback);
+
+var courses = [
+    'Javascript',
+    'Java',
+    'Python',
+    'C++'
+];
+courses.map(function(course){
+console.log(course);
+});
+
+/************************************************************************************* */
+
+//HTML DOM 
+
+// element, attribute, text
+
+var element = document.getElementById('element');
+element.innerHTML = 'Hello';
+
+
+/// Get element
+var title = document.getElementsByClassName('title');
+
+var titles = document.getElementsByName();
+
+var titless = document.getElementsByTagName('h1');
+
+var title = document.querySelectorAll('.title');
+
+var title = document.querySelector('.title');
+
+//    parent.query to children
+
+//DOM attribute
+
+title.className = 'titles';
+//...
+
+//get attribue 
+
+title.getAttribute('class');
+
+//set attribute
+
+title.setAttribute('class','titless');
+
+//remove attribute
+
+title.removeAttribute('class');
+
+//style
+
+title.style.color ='red';
+title.style.fontSize = '20px';
+title.style.fontWeight = 'bold';
+title.style.textDecoration = 'underline';
+title.style.backgroundColor = 'yellow';
+
+//get style
+
+title.style.color;
+title.style.fontSize;
+title.style.fontWeight;
+title.style.textDecoration;
+title.style.backgroundColor;
+
+//set style
+
+
+title.style.color ='red';
+title.style.fontSize = '20px';
+title.style.fontWeight = 'bold';
+title.style.textDecoration = 'underline';
+title.style.backgroundColor = 'yellow';
+
+//remove style
+
+title.style.color = '';
+title.style.fontSize = '';
+title.style.fontWeight = '';
+title.style.textDecoration = '';
+title.style.backgroundColor = '';
+//Event
+
+//InnerText and textContent property
+
+//innertext will show the text in the browser
+//textContent will show the value of the text
+
+
+
