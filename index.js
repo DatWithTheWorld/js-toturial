@@ -487,3 +487,43 @@ title.style.backgroundColor = '';
 
 
 
+// 
+/*/******************************************************************************************************************** */
+
+//INNERHTML vs OUTERHTML PROPERTY
+
+ var title = document.querySelector('.title');
+
+ title.innerHTML = '<h1>Hello</h1>';
+
+ //Outerhtml
+
+ title.outerHTML = '<span>Hello</span>';
+
+
+ /// Should use innerHTML
+
+
+ //Outerhtml change the element as parent of it
+ //InnerHTML change or add a element as children of it
+
+
+ //Node propertires
+
+ //console.log(element) to view all properties of the element and find out how to use it in the browser
+
+//DOM CSS
+
+var title = document.querySelector('.title');
+
+title.style.color ='red';
+title.style.fontSize = '20px';
+title.style.fontWeight = 'bold';
+
+// console.log(element.style) to view all style properties of the element 
+
+Object.assign(title.style,{
+
+    width : '200px',
+    height : '100px'
+});
