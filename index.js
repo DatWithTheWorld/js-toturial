@@ -525,5 +525,91 @@ title.style.fontWeight = 'bold';
 Object.assign(title.style,{
 
     width : '200px',
-    height : '100px'
+    height : '100px',
+    backgroundColor : 'red'
 });
+
+
+
+
+//ClassList properties
+
+//Show all class of a element use it
+
+//1. Add
+
+title.classList.add('red');
+
+//2. contains() check the class is used or not
+
+//3, remove
+
+title.classList.remove('red');
+
+//4. toggle();
+// check if element haved this class or not, if it hased the class will be deleted else the class will be added
+
+
+/***************************************************************************************************************************************************** */
+
+//DOM EVENTS
+
+//************************************************************************************************************************************************* */
+//EVENTS LISTENERs
+        
+
+var btn = document.querySelector('btn');
+
+btn.addEventListener('click', function(e){
+
+})
+function v1(){
+
+}
+btn.removeEventListener('click', v1);
+
+
+
+/**************************************************************************************************************************** */
+//JSON - JAVASCRIPT OBJECT NOTATION
+
+var json = '["Javascript","php"]';
+var jsons = '"JavaScript","php"';
+
+//Promise (sync,async)
+
+setTimeout(() => {
+    
+}, 10000);
+
+//setTimeout -> async function
+
+//be like setInterval or callbacks
+
+//promise pain
+
+//Use an async function inside an async function
+
+//promise concept
+
+var promise = new Promise(
+    //excutor
+    function(resolve, reject){
+//logic
+//success -> resolve
+//fail -> reject
+
+
+    });
+
+
+    promise 
+    .then({
+
+    })
+    .catch({})
+    .finally({})
+
+
+    //promise chain
+
