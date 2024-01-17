@@ -613,3 +613,39 @@ var promise = new Promise(
 
     //promise chain
 
+/********************************************************************************************** */
+
+//Async and await promise
+
+///Async -> async function fuctionName(){...} -> change the normal function to a promise and it allow to use await function
+
+//Await -> use to pause the progress of async, only work with promise and never work with callback. Use inside an async function
+
+//************************************************************************************************************************* */
+
+//FETCH 
+var url = "";
+fetch(url)
+.then(function(response){
+return response.json()
+})
+.then(function(post){
+    console.log(post);
+
+
+})
+
+//*********************************************************************************  */
+
+//JSON SERVER
+
+//npm init -> declare the node project
+
+//create a db.json file
+
+//run command json-server --watch db.json
+
+//run npm start
+
+
+///Courses list
